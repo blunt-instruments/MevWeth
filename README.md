@@ -1,7 +1,8 @@
 # MevWeth
 
-- A Weth10 variant that allows users to create explicit MEV.
-- A simple, inheritable contract for adding Mev to transaction using MevWeth
+- MevWeth: A Weth10 variant that allows users to create explicit MEV.
+- Mevitize: A simple, inheritable contract for adding Mev to transaction using
+  MevWeth
 
 ## What is explicit MEV?
 
@@ -32,21 +33,21 @@ transactions:
 - I am making a big slippery AMM trade, and I want to add -25,000 gwei MEV, so
   that I get some of my slippage back
 
-#### Is MevWETH maintained?
+#### Is MevWeth maintained?
 
 Not really. It's a static deployment. The code will not be updated or upgraded.
 The `Mevitize` base contract is maintained, may be updated in the future.
 
-#### Is MevWETH audited?
+#### Is MevWeth audited?
 
 No, and there is no plan to audit it.
 
-#### Are there tests for MevWETH?
+#### Are there tests for MevWeth?
 
 No. But there probably will be soon. Next time I have some free time. Or you can
 open a pull request!
 
-#### How is MevWETH licensed?
+#### How is MevWeth licensed?
 
 `MevWeth` is a derivative work of `WETH10`, and is released solely under the
 GPLv3 license. Derivates of `MevWeth` must be released under the same license.
@@ -56,11 +57,11 @@ GPLv3, MIT, or Apache2.0. These ARE NOT derivative works of `WETH10`. If you
 wish to call `MevWeth` from other contracts, but do not need its bytecode or
 non-MEV interface, consider using `IMevWeth` or inheriting `Mevitize`.
 
-#### What chains is MevWETH on?
+#### What chains is MevWeth on?
 
 - Ethereum mainnet
 
-#### I want MevWETH on my chain!
+#### I want MevWeth on my chain!
 
 `MevWeth` uses forge to deploy. It can be used on any chain where the forge
 create2 deployer exists. Just run `forge script DeployMevWeth`, and add your
