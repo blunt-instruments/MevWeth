@@ -55,3 +55,25 @@ GPLv3 license. Derivates of `MevWeth` must be released under the same license.
 GPLv3, MIT, or Apache2.0. These ARE NOT derivative works of `WETH10`. If you
 wish to call `MevWeth` from other contracts, but do not need its bytecode or
 non-MEV interface, consider using `IMevWeth` or inheriting `Mevitize`.
+
+#### What chains is MevWETH on?
+
+- Ethereum mainnet
+
+#### I want MevWETH on my chain!
+
+`MevWeth` uses forge to deploy. It can be used on any chain where the forge
+create2 deployer exists. Just run `forge script DeployMevWeth`, and add your
+signer info.
+
+If the create2factory is not deployed on your chain, here are the instructions!
+
+1.  Fund the create2factory deployer
+
+- `$ cast send --value 0.5ether 0x3fab184622dc19b6109349b94811493bf2a45362`
+
+2. Deploy the create2factory
+
+- `cast publish 0xf8a58085174876e800830186a08080b853604580600e600039806000f350fe7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b8082525050506014600cf31ba02222222222222222222222222222222222222222222222222222222222222222a02222222222222222222222222222222222222222222222222222222222222222`
+
+3. Continue with your life :)
