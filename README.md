@@ -13,6 +13,10 @@ operate normally, while delegating intentional MEV creation to another system.
 
 In other words, a lending market could use `MevWeth` to add MEV to a Weth market, without having to worry about mixing its MevWeth with its Weth.
 
+### Addresses
+
+- MevWeth: `0x00000000008C43efC014746c230049e330039Cb3`
+
 ## FAQ:
 
 ### Why would someone produce explicit MEV?
