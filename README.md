@@ -4,6 +4,8 @@
 - Mevitize: A simple, inheritable contract for adding Mev to transaction using
   MevWeth
 
+THIS IS UNAUDITED CODE. USE AT YOUR OWN RISK
+
 ## What is explicit MEV?
 
 Explicit MEV is MEV that is produced intentionally, to achieve a specific
