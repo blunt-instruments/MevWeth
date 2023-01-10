@@ -69,7 +69,7 @@ signer info.
 
 If the create2factory is not deployed on your chain, here are the instructions!
 
-1.  Fund the create2factory deployer
+1.  Fund the create2factory deployer (don't really use 0.5 ether probably)
 
 - `$ cast send --value 0.5ether 0x3fab184622dc19b6109349b94811493bf2a45362`
 
